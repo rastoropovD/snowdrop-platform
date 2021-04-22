@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Data", "Snowdrop.Data\Snowdrop.Data.csproj", "{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.DAL", "Snowdrop.DAL\Snowdrop.DAL.csproj", "{88914E41-FAE0-41D3-A743-9F85308FE0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Db", "Snowdrop.Db\Snowdrop.Db.csproj", "{27CEA0C9-00EF-47B6-826C-762413CE59B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88914E41-FAE0-41D3-A743-9F85308FE0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88914E41-FAE0-41D3-A743-9F85308FE0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88914E41-FAE0-41D3-A743-9F85308FE0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88914E41-FAE0-41D3-A743-9F85308FE0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
