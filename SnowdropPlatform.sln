@@ -6,6 +6,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.DAL", "Snowdrop.DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Db", "Snowdrop.Db\Snowdrop.Db.csproj", "{27CEA0C9-00EF-47B6-826C-762413CE59B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Infrastructure", "Snowdrop.Infrastructure\Snowdrop.Infrastructure.csproj", "{1C0A6425-7DDE-4E9E-AA3D-BA80269ABD5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{82E2819F-3CCE-4CEB-AB14-56549F189B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.DAL.Tests", "Snowdrop.DAL.Tests\Snowdrop.DAL.Tests.csproj", "{D0839112-B12B-4ACF-A238-EF29D47B39A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.BL", "Snowdrop.BL\Snowdrop.BL.csproj", "{0410F60C-026F-4987-B843-16F8BD342DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.BL.Tests.Unit", "Snowdrop.BL.Tests.Unit\Snowdrop.BL.Tests.Unit.csproj", "{FA058D33-9948-4669-AEFF-222C38988A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +34,25 @@ Global
 		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27CEA0C9-00EF-47B6-826C-762413CE59B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0A6425-7DDE-4E9E-AA3D-BA80269ABD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0A6425-7DDE-4E9E-AA3D-BA80269ABD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0A6425-7DDE-4E9E-AA3D-BA80269ABD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0A6425-7DDE-4E9E-AA3D-BA80269ABD5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0839112-B12B-4ACF-A238-EF29D47B39A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0839112-B12B-4ACF-A238-EF29D47B39A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0839112-B12B-4ACF-A238-EF29D47B39A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0839112-B12B-4ACF-A238-EF29D47B39A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0410F60C-026F-4987-B843-16F8BD342DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0410F60C-026F-4987-B843-16F8BD342DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0410F60C-026F-4987-B843-16F8BD342DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0410F60C-026F-4987-B843-16F8BD342DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA058D33-9948-4669-AEFF-222C38988A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA058D33-9948-4669-AEFF-222C38988A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA058D33-9948-4669-AEFF-222C38988A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA058D33-9948-4669-AEFF-222C38988A50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0839112-B12B-4ACF-A238-EF29D47B39A7} = {82E2819F-3CCE-4CEB-AB14-56549F189B08}
+		{FA058D33-9948-4669-AEFF-222C38988A50} = {82E2819F-3CCE-4CEB-AB14-56549F189B08}
 	EndGlobalSection
 EndGlobal

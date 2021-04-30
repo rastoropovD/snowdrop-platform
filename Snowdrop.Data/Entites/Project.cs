@@ -11,7 +11,7 @@ namespace Snowdrop.Data
         public int OwnerId { get; set; }
 
         public virtual User Owner { get; set; }
-        public virtual IReadOnlyCollection<ProjectMember> Team { get; set; }
-        public virtual IReadOnlyCollection<Wallet> Wallets { get; set; }
+        public virtual ICollection<ProjectMember> Team { get; set; }
+        public virtual ICollection<Wallet> Wallets { get; set; }
     }
 }
