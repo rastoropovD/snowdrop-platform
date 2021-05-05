@@ -18,8 +18,8 @@ namespace Snowdrop.BL.Tests.Unit.Services
         {
             //Arrange
             int ownerId = 1;
-            ProjectDto dto = new ProjectDto("Title", "Some descriptio", ownerId);
-            ProjectServices services = new ProjectServices(m_repository, m_mapper);
+            ProjectDto dto = new ("Title", "Some description", ownerId);
+            ProjectsService services = new (m_repository, m_mapper);
             
             //Act
             await services.CreateProject(dto);
@@ -30,7 +30,7 @@ namespace Snowdrop.BL.Tests.Unit.Services
         {
             //Arrange
             int projectId = 1;
-            ProjectServices service = new ProjectServices(m_repository, m_mapper);
+            ProjectsService service = new (m_repository, m_mapper);
             
             //Act
             await service.RemoveProject(projectId);

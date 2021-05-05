@@ -9,7 +9,7 @@ namespace Snowdrop.DAL.Tests.Core
 
         protected BaseTest()
         {
-            ServiceCollection collection = new ServiceCollection();
+            ServiceCollection collection = new ();
             collection.AddSnowdropContextInMemory("SnowdropMemory");
             Services = collection.BuildServiceProvider();
         }

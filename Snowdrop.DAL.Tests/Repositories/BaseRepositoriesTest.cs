@@ -18,35 +18,38 @@ namespace Snowdrop.DAL.Tests.Repositories
         }
 
         [Fact]
-        public void GetService_Repository_NotNull()
+        public void GetService_Repository_InstanceNotNull()
         {
+            //Assert
             Assert.NotNull(Repository);
         }
         
         [Fact]
-        public async Task Insert_NullEntity_ArgumentNullException()
+        public async Task Insert_NullEntity_ArgumentNullExceptionThrown()
         {
+            //Assert
             await Assert.ThrowsAsync<ArgumentNullException>(() => Repository.Insert(null));
         }
         
         [Fact]
-        public async Task Update_NullEntity_ArgumentNullException()
+        public async Task Update_NullEntity_ArgumentNullExceptionThrown()
         {
+            //Assert
             await Assert.ThrowsAsync<ArgumentNullException>(() => Repository.Update(null));
-        }
+        } 
         
         [Fact]
-        public async Task Delete_NullEntity_ArgumentNullException()
+        public async Task Delete_EntityIsNotExist_ArgumentNullExceptionThrown()
         {
             //Arrange
             int id = -1;
-
+            
             //Act
             TEntity entity = await Repository.GetSingle(id);
-
+            
             //Assert
             Assert.Null(entity);
-            await Assert.ThrowsAsync<ArgumentNullException>(() => Repository.Delete(id));
+            await Assert.ThrowsAsync<ArgumentNullException>(() => Repository.Delete(-1));
         }
     }
 }

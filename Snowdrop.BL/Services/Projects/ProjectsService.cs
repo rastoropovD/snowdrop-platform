@@ -6,12 +6,12 @@ using Snowdrop.Infrastructure.Dto;
 
 namespace Snowdrop.BL.Tests.Unit.Services.Projects
 {
-    public sealed class ProjectServices : IProjectService
+    public sealed class ProjectsService : IProjectService
     {
         private readonly IRepository<Project> m_repository = default;
         private readonly IMapper m_mapper = default;
 
-        public ProjectServices(
+        public ProjectsService(
             IRepository<Project> repository,
             IMapper mapper)
         {
