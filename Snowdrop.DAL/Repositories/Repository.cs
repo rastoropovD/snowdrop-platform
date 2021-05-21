@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,6 +29,13 @@ namespace Snowdrop.DAL.Repositories
         public Task<TEntity> GetSingle(int id)
         {
             return m_entities.SingleOrDefaultAsync(entity => entity.Id == id);
+        }
+
+        public Task<TEntity> GetSingle(Expression<Func<TEntity, bool>> predicate)
+        {
+            return m_entities
+                   .Where(predicate)
+                   .SingleOrDefaultAsync();
         }
 
         public Task Insert(TEntity entity)

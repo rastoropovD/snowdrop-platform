@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Snowdrop.Auth.Managers.JwtAuthManager;
 using Snowdrop.Auth.Managers.TokenStorage;
 using Snowdrop.Auth.Models.Configurations;
 using StackExchange.Redis.Extensions.Core.Configuration;
@@ -47,6 +48,7 @@ namespace Snowdrop.Auth.Extensions
                         ClockSkew = TimeSpan.FromSeconds(30)
                     };
                 });
+            services.AddScoped<IJwtAuthManager, JwtAuthManager>();
         }
 
         public static void AddMemorySessionManager(this IServiceCollection services)

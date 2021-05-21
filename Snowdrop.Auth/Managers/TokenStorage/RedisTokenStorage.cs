@@ -15,7 +15,7 @@ namespace Snowdrop.Auth.Managers.TokenStorage
 
         public Task RememberToken(RefreshToken refreshToken)
         {
-            return m_client.Db0.AddAsync(refreshToken.Token, refreshToken, refreshToken.ExpiresAt);
+            return m_client.Db0.AddAsync(refreshToken.UserName, refreshToken, refreshToken.ExpiresAt);
         }
 
         public async void InvalidateToken(string userName)
