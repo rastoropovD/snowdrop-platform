@@ -29,6 +29,8 @@
 _UpgradeReport_Files/
 [Pp]ackages/
 artifacts/
+.nuke/temp
+
 
 Thumbs.db
 Desktop.ini
