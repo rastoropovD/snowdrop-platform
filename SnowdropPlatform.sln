@@ -22,12 +22,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Api", "Snowdrop.Ap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snowdrop.Api.Tests.Intergation", "Snowdrop.Api.Tests.Intergation\Snowdrop.Api.Tests.Intergation.csproj", "{2C0F9A88-5E06-4B2A-BA8F-54EF4987C03E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snowdrop.Tools.Nuke", "Snowdrop.Tools.Nuke\Snowdrop.Tools.Nuke.csproj", "{95FCAA87-7DCC-435B-99AA-BAF49DBBB4A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95FCAA87-7DCC-435B-99AA-BAF49DBBB4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95FCAA87-7DCC-435B-99AA-BAF49DBBB4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13A6B515-A188-49A4-BC5F-F421A0CFD7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
