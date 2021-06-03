@@ -46,6 +46,7 @@ namespace Snowdrop.Api.Controllers
         
         [HttpPost]
         [Authorize]
+        [Route("[action]")]
         public new ActionResult SignOut()
         {
             m_authManager.RemoveRefreshToken(User.Identity?.Name);
