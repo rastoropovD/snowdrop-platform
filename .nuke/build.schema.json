@@ -65,7 +65,9 @@
             "type": "string",
             "enum": [
               "Archive",
+              "BlTests",
               "Clean",
+              "DalTests",
               "Deploy",
               "Publish",
               "Restore"
@@ -83,7 +85,9 @@
             "type": "string",
             "enum": [
               "Archive",
+              "BlTests",
               "Clean",
+              "DalTests",
               "Deploy",
               "Publish",
               "Restore"

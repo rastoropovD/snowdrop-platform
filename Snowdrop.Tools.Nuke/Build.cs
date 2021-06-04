@@ -14,7 +14,7 @@ using static Nuke.Common.Tools.DotNet.DotNetTasks;
 
 [CheckBuildProjectConfigurations]
 [ShutdownDotNetAfterServerBuild]
-class Build : NukeBuild
+public sealed partial class Build : NukeBuild
 {
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
@@ -47,7 +47,7 @@ class Build : NukeBuild
     Project Api => Solution.GetProject("Snowdrop.Api");
 
     Target Publish => _ => _
-                           .DependsOn(Restore, Clean)
+                           .DependsOn(Restore, Clean, BlTests, DalTests)
                            .Executes(() =>
                            {
                                DotNetPublish(s => s

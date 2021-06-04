@@ -22,6 +22,7 @@ namespace Snowdrop.BL.Tests.Unit.Services
             ProjectsService services = new (m_repository, m_mapper);
             
             //Act
+            // Assert.True(false);
             await services.CreateProject(dto);
         }
         
